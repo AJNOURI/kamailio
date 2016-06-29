@@ -1,7 +1,7 @@
 # kamailio-alpine
 
-Edit the file /etc/kamailio/kamctlrc
-Uncomment annd set the container IP address
+Edit the file **/etc/kamailio/kamctlrc**  
+Uncomment and set the container IP address
 > SIP_DOMAIN=X.X.X.X
 
 Set SQLITE as the database
