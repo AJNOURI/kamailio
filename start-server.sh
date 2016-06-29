@@ -1,6 +1,5 @@
 #!/bin/sh
-SERVER_IP=""
-
+SERVER_IP=$(ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)
 cat > /etc/kamailio/kamctlrc <<EOF
 # Set the container IP address
 SIP_DOMAIN=$SERVER_IP
