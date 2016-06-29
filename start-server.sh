@@ -28,4 +28,4 @@ kamctl add user9 user9
 kamctl add user10 user10
 
 #Start kamailio process
-/etc/init.d/kamailio start
+CMD ["kamailio","start"]
